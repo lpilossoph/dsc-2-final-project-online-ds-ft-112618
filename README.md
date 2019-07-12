@@ -1,15 +1,15 @@
 
 # Hypothesis Testing With Northwind SQL Database
 
-
-
-### The Project
+## The Project
 
 For this project, we worked with the Northwind database--a free, open-source dataset created by Microsoft containing data from a fictional company in an SQL Database. Here's the schema for the Northwind database:
 
 <img src='Northwind_ERD.png'>
 
-The goal of this project is to use statistical analysis and hypothesis testing to generate analytical insights that can be of value to the Northwind company. 
+The goal of this project is to use statistical analysis and hypothesis testing to generate analytical insights that can be of value to the Northwind company.
+
+<a href="https://github.com/lpilossoph/dsc-2-final-project-online-ds-ft-112618/blob/master/Untitled.ipynb">### Link to Notebook</a>
 
 ## Post-Data Inspection Questions:
 
