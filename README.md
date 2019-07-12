@@ -44,5 +44,56 @@ Explanation:
 * Tukey test: show that the mean difference in quantity purchased is most significant when comparing no discount to a 5%, 15%, 20%, and 25% discount. The biggest increase in mean quantity purchased occurs at the 15% level, followed closely by the 25% and 5% level.
 #### There is a significant increase in quantity of products ordered between levels of discounts
 
+### Question 2: 
+#### Do certain employees sell more products than others per transaction?
+Certain employees have a significant impact on the quantity of products purchased. 𝐻a: μ1 ≠ μ2 ≠ μ3 ... ≠ μk
+The specific employee has no impact on the quantity of products purchased. 𝐻o: μ1 = μ2 = μ3 ... = μk
+
+
+### RESULT: FAILURE TO REJECT THE NULL HYPOTHESIS
+Explanation:
+* Levene test: p-value > alpha, therefore the assumption of equal variance among discount groups is fulfilled.
+* ANOVA: F statistic value is 1.57 and the P value > alpha, showing that the null hypothesis cannot be rejected in favor of the alternative hypothesis, indicating there is no significant difference among employees sale numbers.
+* Tukey Test: confirms ANOVA results, as it fails to reject the null hypothesis with all comparisons
+#### There is no significant difference in quantity of products sold per order between the nine employees of Northwind Trading.
+
+
+### Question 3: 
+#### Do certain countries purchase more products than others per order?
+𝐻a: Customers from specific countries purchase a significantly different amount of products per order than others. (μ1 ≠ μ2 ≠ μ3 ... ≠ μk)
+𝐻o: The customers from each country purchase the same average quantity of products per order. (μ1 = μ2 = μ3 ... = μk)
+
+### RESULT: REJECT THE NULL HYPOTHESIS
+Explanation:
+* Levene test: p-value < alpha, indicating that the samples do not fulfill the assumption of equal variance
+* Kruskal-Wallis H test: there is a statistically significant difference among the quantities of items purchased per transaction between different countries.
+#### There is a significant difference in quantity of products ordered depending on the country it is ordered from.
+
+### Question 4: 
+#### Do clients purchase significantly more meat or vegetarian items?
+𝐻a: There is a difference between the average quantity of meat vs. vegetarian items purchased. (H1: μ1 ≠ μ2)
+𝐻o: There is no difference between the average quantity of meat vs. vegetarian items purchased. (H0: μ1 = μ2)¶
+
+### RESULT: FAILURE TO REJECT THE NULL HYPOTHESIS
+Explanation:
+* Levene test: p-value > alpha value, therefore the assumption of equal variance is fulfilled
+* Two Sample T-Test: p-value > alpha, therefore we CANNOT REJECT the null hypothesis and we can conclude:
+There is no significant difference in quantity of vegetarian products ordered vs. meat products ordered per order.¶
+
+## Conclusions:
+* Discounts do in fact have an effect on the quantity of items purchased per order. There is an approximately 20% increase in the number of items ordered when a 15% discount is applied to items, and an approximately 19% increase when a 5% discount is applied to items, relative to no discount.
+* Specific Employees have no effect on the quantity of items purchased per transaction. However, certain employees have overall sold more items and have brought in more money compared to others, but this may be attributed to hire-date.
+* Certain countries purchase significantly more quantity of items per transaction than others. Germany purchases approximately 25% more items per transaction than the UK.
+* There is no statistically significant difference between the number of vegetarian items purchased per transaction and the number of meat products purchased per transaction.
+
+## Future Work
+* Examine specific customer trends since our linear regression showed this to be a significant predictor of the quantity of items ordered per transaction.
+* Examine employee sales adjusting for hire-date to determine if there are any employees bringing in more money.
+* Examine the relationships between other types of products and thier sales numbers to determine whether or not they sell better than others.
+
+
+
+
+
 
  
